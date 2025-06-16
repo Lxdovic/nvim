@@ -13,3 +13,5 @@ o.relativenumber = true
 
 -- set filetype for .CBL COBOL files.
 -- vim.cmd([[ au BufRead,BufNewFile *.CBL set filetype=cobol ]])
+
+o.swapfile = false
