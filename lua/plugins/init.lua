@@ -12,7 +12,7 @@ return {
 
     {
         "neovim/nvim-lspconfig",
-        event = { "BufReadPre", "BufNewFile" },
+        event = { "BufReadPre", "BufNewFile", "BufAdd" },
         config = function()
             require("nvchad.configs.lspconfig").defaults()
             require("configs.lspconfig")
