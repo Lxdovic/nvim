@@ -4,7 +4,9 @@ return {
 
     {
         "nvim-treesitter/nvim-treesitter",
-        event = { "BufReadPre", "BufNewFile" },
+        -- event = { "BufReadPre", "BufNewFile" },
+        lazy = false,
+        build = ":TSUpdate",
         config = function()
             require("configs.treesitter")
         end,
@@ -12,7 +14,7 @@ return {
 
     {
         "neovim/nvim-lspconfig",
-        event = { "BufReadPre", "BufNewFile", "BufAdd" },
+        event = { "BufReadPre", "BufNewFile" },
         config = function()
             require("nvchad.configs.lspconfig").defaults()
             require("configs.lspconfig")

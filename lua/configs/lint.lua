@@ -2,6 +2,9 @@ local lint = require("lint")
 
 lint.linters_by_ft = {
     lua = { "luacheck" },
+    typescript = { "eslint_d" },
+    javascript = { "eslint_d" },
+    tsx = { "eslint_d" },
     -- haskell = { "hlint" },
     -- python = { "flake8" },
 }

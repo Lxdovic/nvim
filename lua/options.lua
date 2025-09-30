@@ -15,3 +15,11 @@ o.relativenumber = true
 -- vim.cmd([[ au BufRead,BufNewFile *.CBL set filetype=cobol ]])
 
 o.swapfile = false
+
+o.foldmethod = "expr"
+o.foldexpr = "nvim_treesitter#foldexpr()"
+o.foldenable = false
+
+o.foldlevelstart = 99 -- Open all folds by default on buffer open
+o.foldcolumn = "1" -- Show fold column
+o.foldminlines = 1 -- Minimum lines to fold
