@@ -13,6 +13,11 @@ return {
     },
 
     {
+        "sindrets/diffview.nvim",
+        lazy = false,
+    },
+
+    {
         "neovim/nvim-lspconfig",
         event = { "BufReadPre", "BufNewFile" },
         config = function()

@@ -10,9 +10,11 @@ lspconfig.servers = {
     "clangd",
     "gopls",
     -- "hls",
+    "rust_analyzer",
     "ols",
     "pyright",
     "ts_ls",
+    "prismals",
 }
 
 -- list of servers configured with default config.

@@ -15,6 +15,7 @@ local options = {
         "luadoc",
         "javascript",
         "typescript",
+        "prisma",
         -- "jsx",
         "tsx",
         "make",
