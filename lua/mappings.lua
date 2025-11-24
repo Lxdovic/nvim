@@ -40,4 +40,7 @@ vim.api.nvim_set_keymap("v", "<Down>", "<Nop>", opts)
 vim.api.nvim_set_keymap("v", "<Left>", "<Nop>", opts)
 vim.api.nvim_set_keymap("v", "<Right>", "<Nop>", opts)
 
+-- Outline.nvim
+-- vim.keymap.set("n", "<leader>o", "<cmd>Outline<CR>", { desc = "Toggle Outline" })
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
