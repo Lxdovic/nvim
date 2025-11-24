@@ -1,27 +1,13 @@
--- local lspconfig = package.loaded.configs.lspconfig
---
--- -- List of servers to ignore during install
--- local ignore_install = {}
---
--- -- Helper function to find if value is in table.
--- local function table_contains(table, value)
---     for _, v in ipairs(table) do
---         if v == value then
---             return true
---         end
---     end
---     return false
--- end
---
--- -- Build a list of lsp servers to install minus the ignored list.
--- local all_servers = {}
--- for _, s in ipairs(lspconfig.servers) do
---     if not table_contains(ignore_install, s) then
---         table.insert(all_servers, s)
---     end
--- end
---
--- require("mason-lspconfig").setup({
---     ensure_installed = all_servers,
---     automatic_installation = false,
--- })
+local mason_lspconfig = require("mason-lspconfig")
+local servers = vim.lsp.config.servers
+
+local available = mason_lspconfig.get_available_servers()
+
+local to_install = vim.tbl_filter(function(server)
+    return vim.tbl_contains(available, server)
+end, servers)
+
+mason_lspconfig.setup({
+    ensure_installed = to_install,
+    automatic_installation = false,
+})
