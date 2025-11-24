@@ -16,12 +16,20 @@ M.base46 = {
 
 M.mason = {
   pkgs = {
+    -- lsp
     "css-lsp",
     "html-lsp",
     "lua-language-server",
     "rust-analyzer",
     "stylua",
     "typescript-language-server",
+    -- lsp
+
+    -- lint
+    "luacheck",
+    "eslint_d",
+    "flake8",
+    -- lint
   },
 }
 
