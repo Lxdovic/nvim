@@ -1,3 +1,11 @@
+# Requirements
+
+The following needs to be installed before installing the config
+
+- Python
+- Rust
+- Npm
+
 # Install
 
 ```sh 

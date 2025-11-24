@@ -1,6 +1,13 @@
 require "nvchad.options"
 
--- add yours here!
+vim.o.relativenumber = true
 
--- local o = vim.o
--- o.cursorlineopt ='both' -- to enable cursorline!
+vim.o.swapfile = false
+
+vim.o.foldmethod = "expr"
+vim.o.foldexpr = "nvim_treesitter#foldexpr()"
+vim.o.foldenable = false
+
+vim.o.foldlevelstart = 99 -- Open all folds by default on buffer open
+vim.o.foldcolumn = "1" -- Show fold column
+vim.o.foldminlines = 1 -- Minimum lines to fold

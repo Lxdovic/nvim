@@ -1,0 +1,38 @@
+return {
+  ensure_installed = {
+    "bash",
+    "c",
+    "cmake",
+    "cpp",
+    "fish",
+    "go",
+    "gomod",
+    "gosum",
+    "gotmpl",
+    "gowork",
+    "haskell",
+    "lua",
+    "luadoc",
+    "javascript",
+    "typescript",
+    "prisma",
+    "tsx",
+    "make",
+    "markdown",
+    "odin",
+    "printf",
+    "python",
+    "toml",
+    "vim",
+    "vimdoc",
+    "yaml",
+    "rust",
+  },
+
+  highlight = {
+    enable = true,
+    use_languagetree = true,
+  },
+
+  indent = { enable = true },
+}
