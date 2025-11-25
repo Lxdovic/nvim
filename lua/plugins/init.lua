@@ -12,21 +12,38 @@ return {
     end,
   },
 
-  {
-    "mrcjkb/rustaceanvim",
-    version = "*",
-    ft = { "rust" },
-    config = function()
-      -- TODO
-    end,
-  },
+  -- {
+  --   "mrcjkb/rustaceanvim",
+  --   version = "^6",
+  --   lazy = false,
+  --   ft = { "rust" },
+  --   config = function()
+  --     vim.g.rustaceanvim = {
+  --       -- Plugin configuration
+  --       tools = {},
+  --       -- LSP configuration
+  --       server = {
+  --         on_attach = function(client, bufnr)
+  --           -- you can also put keymaps in here
+  --         end,
+  --         default_settings = {
+  --           -- rust-analyzer language server configuration
+  --           ["rust-analyzer"] = {},
+  --         },
+  --       },
+  --       -- DAP configuration
+  --       dap = {},
+  --     }
+  --     -- TODO
+  --   end,
+  -- },
 
-  {
-    "sindrets/diffview.nvim",
-    dependencies = { "nvim-lua/plenary.nvim" },
-    lazy = false,
-    -- TODO: Add mappings for diffview commands
-  },
+  -- {
+  --   "sindrets/diffview.nvim",
+  --   dependencies = { "nvim-lua/plenary.nvim" },
+  --   lazy = false,
+  --   -- TODO: Add mappings for diffview commands
+  -- },
 
   {
     "f-person/git-blame.nvim",
@@ -74,5 +91,4 @@ return {
       }
     end,
   },
-
-  }
+}
